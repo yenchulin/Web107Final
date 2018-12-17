@@ -1,0 +1,6 @@
+.pic {
+    position: fixed;
+    padding: 80px;
+    top: 30%;
+    transition: transform .5s ease-in-out
+}
