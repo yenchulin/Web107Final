@@ -1,9 +1,29 @@
+.text {
+    position: relative;
+}
+
 .text .p0 {
     margin-bottom: 700px;
     margin-top: 80px
 }
 
-.text .p1 {
+.text .p1-1 {
     margin-top: 50px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.text .p1-2 {
+    position: absolute;
+    top: 310px;
+    transform: translate(80px ,450px) scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+.text .p1-3 {
+    position: absolute;
+    top: 775px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out
 }
