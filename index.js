@@ -1,14 +1,17 @@
 $(document).ready(function () {
     $(window).scroll(function () {
-        let scrollTop = $(window).scrollTop() / $(window).height();
-        console.log(scrollTop);
+        let scrollPos = $(window).scrollTop();
+        let picMovePos = 300; // pic should move when scrollPos equals 300
+        let p11FixedPos = $(".p1-2").position().top; // p1-1 should fadeout when p1-2 showed up
 
-        if (scrollTop >= 0.4) {
+        console.log(scrollPos, p11FixedPos, $(".p1-1").position().top);
+
+        if (scrollPos > picMovePos) {
             $(".pic").moveUp();
             setTimeout(() => {
                 $(".text .p1-2").expandMove();
             }, 500);
-        } else if (scrollTop === 0) {
+        } else if (scrollPos === 0) {
             $(".pic").moveBack();
         }
     });
@@ -23,9 +26,9 @@ $.fn.moveBack = function () {
 };
 
 $.fn.expandMove = function () {
-    this.css({ "transform": "translate(0px, 0px) scale(1)" });
+    this.css({ "transform": "translate(0px, -450px) scale(1)" });
 };
 
-$.fn.fadeout = function () {
-    this.css({ "opacity": "0" });
+$.fn.expandBack = function () {
+    this.removeAttr("style");
 };

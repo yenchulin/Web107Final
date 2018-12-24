@@ -24,15 +24,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
             integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
             crossorigin="anonymous"></script>
+    <!--ScrollMagic-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
     <!-- My JS -->
-    <script src="./index.js"></script>
+    <script src="./index2.js"></script>
 </head>
 
 <body>
-<div class="pic">
-    <img class="img-fluid" src="./assets/images/blocks.png"/>
-</div>
-<div class="text">
+
+<div class="p1">
     <div class="p0 container-fluid text-center">
         <h1>Introduction to Blockchain</h1>
         <p>A Basic Tutorial for Beginners</p>
@@ -48,6 +51,14 @@
     <div class="p1-3 container-fluid text-center">
         <h5>Once some data has been recorded inside a blockchain,
             <br/> it becomes very difficult to change it.
+        </h5>
+    </div>
+    <div class="pic fixed">
+        <img class="img-fluid" src="./assets/images/blocks.png"/>
+    </div>
+    <div class="p1-4 container-fluid text-center">
+        <h5>Each block contains some data,
+            <br/> the hash of the block and the hash of the previous block.
         </h5>
     </div>
 </div>

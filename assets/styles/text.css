@@ -1,29 +1,48 @@
-.text {
+.p1 {
     position: relative;
 }
 
-.text .p0 {
-    margin-bottom: 700px;
+.p0 {
+    margin-bottom: 600px;
     margin-top: 80px
 }
 
-.text .p1-1 {
-    margin-top: 50px;
-    margin-bottom: 80px;
+
+.p1-1 {
+    padding-top: 50px;
+    padding-bottom: 300px;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+.p1-1.fixed :first-child {
+    position: fixed;
 }
 
-.text .p1-2 {
-    position: absolute;
-    top: 310px;
-    transform: translate(80px ,450px) scale(0);
+
+.p1-2 {
+    transform: translate(80px ,-370px) scale(0);
     transition: transform 1s ease-in-out;
 }
+.p1-2.expand-move {
+    transform: translate(0px ,-800px) scale(1);
+}
+.p1-2.fixed {
+    transform: initial;
+    transition: initial;
+}
+.p1-2.fixed :first-child {
+    position: fixed;
+}
 
-.text .p1-3 {
-    position: absolute;
-    top: 775px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out
+
+.p1-3 {
+    padding-bottom: 300px;
+}
+.p1-3.fixed :first-child {
+    position: fixed;
+}
+
+
+.p1-4 {
+    padding-bottom: 300px;
 }
