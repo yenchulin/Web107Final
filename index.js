@@ -331,7 +331,7 @@ $(document).ready(function() {
     let p7p74Scrollright = new TimelineMax();
     p7p74Scrollright
         .to(".p7", 1, {backgroundPosition: "200% 25%"})
-        .to(".p7-4", 1, {transform: "translateX(80vw)"}, 0);
+        .to(".p7-4", 1, {transform: "translateX(90vw)"}, 0);
     new ScrollMagic.Scene({
         offset: p74FixedScene.scrollOffset() + 150,
         duration: 200
