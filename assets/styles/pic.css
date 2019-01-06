@@ -1,8 +1,52 @@
+body {
+    background-image: linear-gradient(to right, #ddd, #fbfbfb, #ddd);
+}
+
 .pic {
     padding: 80px;
-    transition: transform .5s ease-in-out
 }
 .pic.fixed {
     position: fixed;
     top: 30%;
+}
+
+.p2, .p3, .p4, .p5, .p6, .p7 {
+    background-position: 50% 25%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.p2 {
+    background-image: url("../images/p2_data1.png");
+    height: 800px;
+}
+
+.p3 {
+    background-image: url("../images/p2_data2.png");
+    height: 1250px;
+}
+
+.p4 {
+    background-image: url("../images/p2_data3.png");
+    height: 1200px;
+}
+
+.p5 {
+    background-image: url("../images/p3_hash1.png");
+    height: 850px;
+}
+
+.p6 {
+    background-image: url("../images/p3_hash2.png");
+    height: 850px;
+}
+
+.p7 {
+    background-image: url("../images/p3_hash3.png");
+    height: 1300px;
+}
+
+.p8 {
+    height: 1400px
 }
